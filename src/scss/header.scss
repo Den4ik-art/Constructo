@@ -1,0 +1,100 @@
+header.header {
+    width: 100%;
+    max-width: 1920px;
+    height: 150px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/path/to/background.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+
+    .container {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 3.125vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            height: 9.26vh;
+        }
+
+        span {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 2px;
+        }
+    }
+
+    .header__nav {
+        ul {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+
+        li {
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.5rem;
+                transition: color 0.3s ease;
+
+            &:hover {
+                color: #f1c40f;
+            }
+            }
+        }
+    }
+    }
+
+    .header__menu {
+        .menu-button {
+            background: none;
+            border: none;
+            padding: 0;
+            margin: 0;
+            outline: none;
+            box-shadow: none;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 4vh;
+            width: auto;
+        
+            span {
+                display: block;
+                width: 3.13vw;
+                height: 0.56vh;
+                background: white;
+                border-radius: 2px;
+                margin: 2px 0;
+                border: none;
+                box-shadow: none;
+            }
+        
+            &:hover span {
+                background-color: #f1c40f;
+            }
+        
+            &:active,
+            &:focus {
+                outline: none;
+                background: none;
+                border: none;
+                box-shadow: none;
+            }
+        }
+        
+    }
+}

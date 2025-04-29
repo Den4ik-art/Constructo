@@ -1,0 +1,71 @@
+//Секція - 1 (Назва та дивіз компанії)
+section.section1
+  .section1__content
+    div.section1__text
+        h1.section1__title CONSTRUCTO
+        p.section1__subtitle Ви замовляєте — ми будуємо
+//Секція - 2 (Приклади готових проектів)
+section.section2
+  .section2__content
+    h2.section2__title Приклади готових проектів
+    .section2__projects
+      each project in ['Дім 1', 'Дім 2', 'Дім 3', 'Дім 4', 'Дім 5', 'Дім 6']
+        .section2__project
+          img.section2__project-image(src='/pages/img/house' + (project.split(' ')[1]) + '.png', alt=project)
+          .section2__project-name #{project}
+//Секція - 3 (Розрахунок кількості матеріалів та бюджету)
+section.section3
+  .section3__content
+    h2.section3__title Розрахунок кількості матеріалів та бюджету
+    .section3__wrapper
+      .section3__info
+        p.section3__text
+          | Для ефективного управління будівельними проектами важливо заздалегідь визначити необхідну кількість матеріалів та передбачити бюджет. Наш сервіс дозволяє автоматизувати цей процес, зменшуючи ризики перевитрат та забезпечуючи точне планування.
+        p.section3__text
+          | Система враховує:
+        ul.section3__list
+          li Тип та об'єм робіт
+          li Площу та характеристики об'єкта
+          li Вартість матеріалів від перевірених постачальників
+          li Норми витрат будівельних ресурсів
+          li Орієнтовні дати початку
+      .section3__form
+        p.section3__form__text
+          | Заповни контактні дані для подальшого зв'язку
+        form(action="#" method="POST")
+          input.section3__input(type="text" placeholder="ПІБ" required)
+          input.section3__input(type="tel" placeholder="Телефон" required)
+          input.section3__input(type="email" placeholder="Email" required)
+    .section3__order
+      h3.section3__order__title Створи своє замовлення
+      .section3__order__works
+        h4.section3__order__subtitle Необхідні роботи
+        form(action="#" method="POST")
+          each work in ['Дім з нуля', 'Заливка', 'Кладка цегли', 'Утеплення фасаду', 'Утеплення даху', 'Фарбування', 'Озеленення', 'Шпаклювання', 'Електропроводка', 'Фарбування', 'Планування', 'Штукатурка', 'Розчищення', 'Система опалення', 'Вентиляція']
+            label
+              input(type="checkbox" name="work" value=work)
+              | #{work}
+      .section3__order__fields
+        input(type="text" placeholder="Площа території" required class="wide-input")
+        input(type="date" placeholder="Дата початку" required)
+        input(type="date" placeholder="Дата кінця" required)
+//Секція - 4 (Визначення ресурсів та необхідних робітників)
+section.section4
+  .section4__container
+    h2.section4__title Визначення ресурсів та необхідних робітників
+    h3.section4__subtitle Необхідні техніка
+    .section4__equipment
+      each tech in ['Трактор 1', 'Кран 2', 'Самоскид 3', 'Екскаватор 4', 'Екскаватор 5', 'Трактор 6']
+        label.section4__checkbox-wrapper
+          input(type='checkbox', name=tech)
+          img.section4__equipment-image(
+            src='/pages/img/equipment' + (tech.split(' ')[1]) + '.png',
+            alt=tech
+          )
+    .section4__workers
+      h3.section4__subtitle Необхідні майстри
+      form(action="#" method="POST")
+        each worker in ['Маляр', 'Штукатур', 'Бригадир', 'Універсальний будівельник', 'Ландшафтний дизайнер', 'Землекоп', 'Електрик', 'Бетонник', 'Монтажник систем опалення', 'Оператор спецтехніки', 'Сантехнік', 'Каменяр', 'Фасадчик', 'Робітник загального профілю', 'Монтажник вентиляцій']
+          label.section4__checkbox-text
+            input(type='checkbox', name='worker')
+            span= worker
