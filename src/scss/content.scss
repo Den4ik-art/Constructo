@@ -46,7 +46,7 @@ body {
 .section2 {
     width: 100%;
     max-width: 1920px;
-    padding: 2.35vh 9.25vh;
+    padding: 2.35vh 0;
     text-align: center;
 
     &__title {
@@ -123,7 +123,7 @@ body {
 .section3 {
   width: 100%;
   max-width: 1920px;
-  padding: 2.35vh 9.25vh;
+  padding: 2.35vh 0;
 
   &__title {
     font-size: 5rem;
@@ -394,3 +394,196 @@ body {
     }
   }
 }
+
+
+/*Медіа запити*/
+@media (max-width: 768px) {
+    body {
+      max-width: 768px;
+    }
+    // Секція 1
+    .section1 {
+      width: 100%;
+      max-width: 768px;
+      height: 50vh;
+    }
+
+    .section1__content {
+      width: 100%;
+      max-width: 768px;
+      
+    }
+
+    .section1__title {
+        font-size: 5rem;
+    }
+
+    .section1__subtitle {
+        font-size: 1.5rem;
+    }
+
+    // Секція 2
+    .section2 {
+      padding: 2vh 0;
+      max-width: 768px;
+
+      &__project {
+        width: 90%;
+        max-width: 150px;
+        height: 100px;
+      }
+    }
+
+    .section2__title {
+        font-size: 2.5rem;
+    }
+
+    .section2__projects {
+        margin-left: 0;
+        margin-right: 0;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vh 1.25vw;
+    }
+
+    .section2__project {
+        max-width: 100%;
+        height: auto;
+    }
+
+    // Секція 3
+    .section3 {
+      padding: 2vh 0;
+      width: 100%;
+      max-width: 768px;
+
+      &__form {
+
+        form {
+          gap: 2vh;
+        }
+      }
+    }
+
+    .section3__title {
+        font-size: 2.5rem;
+        margin-bottom: 2.5vh;
+    }
+
+    .section3__wrapper {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .section3__form {
+      flex-direction: column;
+      gap: 2vh;
+    }
+
+    .section3__input {
+        font-size: 1.8rem;
+        padding: 1.5vh;
+    }
+
+    .section3__order__title {
+      margin: 1.75vh 0;
+    }
+
+      .section3__order__works {
+        padding: 0 1vw;
+
+        form {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1vh;
+        }
+
+        label {
+          display: flex;
+          align-items: center;
+          gap: 2vh;
+          font-size: 0.95rem;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+
+        input[type="checkbox"] {
+          flex-shrink: 0;
+          transform: scale(0.8);
+          align-items: center;
+        }
+      }
+
+    .section3__order__subtitle {
+        margin-bottom: 3vh;
+    }
+
+    .section3__order__fields {
+      margin-top: 1.75vh;
+    }
+
+    .section3__order__fields input {
+        max-width: 100%;    
+    }
+
+    // Секція 4
+    .section4 {
+      width: 100%;
+      max-width: 768px;
+      padding: 0;
+      padding-bottom: 4vh;
+    }
+
+    .section4__title {
+        font-size: 2.5rem;
+        margin: 2.5vh 0;
+    }
+
+    .section4__subtitle {
+        font-size: 2rem;
+        margin-bottom: 2vh;
+    }
+
+    .section4__equipment {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3vh 0;
+    }
+
+    .section4__equipment img {
+        width: 100%; // Ширина зображень техніки
+        height: auto; // Висота зображень техніки
+    }
+
+    .section4__workers {
+        flex-direction: column;
+        margin: 2vh 2.5vh 3.5vh 2.5vh;
+
+        form {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1vh;
+        }
+
+        label {
+          display: flex;
+          align-items: center;
+          gap: 2vh;
+          font-size: 0.95rem;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+
+        input[type="checkbox"] {
+          flex-shrink: 0;
+          transform: scale(0.8);
+          align-items: center;
+        }
+    }
+
+    .section4__workers label {
+        font-size: 1.8rem; // Зменшуємо розмір шрифта
+    }
+}
+

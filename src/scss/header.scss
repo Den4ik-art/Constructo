@@ -7,7 +7,7 @@ header.header {
     align-items: center;
     position: fixed;
     top: 0px;
-    right: 0px;
+    left: 0;
     z-index: 2;
 
     .container {
@@ -22,7 +22,6 @@ header.header {
     .header__logo {
         display: flex;
         align-items: center;
-        gap: 10px;
 
         img {
             height: 9.26vh;
@@ -96,5 +95,58 @@ header.header {
             }
         }
         
+    }
+}
+
+/*Медіа запити*/
+@media (max-width: 768px) {
+    header.header {
+        max-width: 768px;
+        height: 120px;
+        top: 0px;
+        left: 0;
+    
+        .container {
+            max-width: 768px;
+        }
+
+        .header__logo {
+
+            span {
+                font-size: 1.8rem;
+            }
+
+            img {
+                height: 5vh;
+            }
+        }
+
+        .header__nav ul {
+            display: none;
+        }
+
+        .header__menu .menu-button {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 2.5vh;
+            width: 7vw;
+        }
+
+        .header__menu .menu-button span {
+            background: white;
+            height: 3px;
+            width: 100%;
+            margin: 4px 0;
+            border-radius: 2px;
+        }
+
+        .header__nav {
+            display: none;
+        }
+
+        .header__menu {
+            display: block;
+        }
     }
 }
