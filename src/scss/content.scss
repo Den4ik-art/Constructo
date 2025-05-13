@@ -395,6 +395,88 @@ body {
   }
 }
 
+//Налаштування секції 5
+.section5__result {
+  width: 100%;
+  max-width: 1920px;
+
+  .result {
+    margin: 4vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/pages/img/background_5.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4vh;
+
+    &.hidden {
+      display: none;
+    }
+
+    .result__rectangle {
+      background-color: #fff5b3;
+      border-radius: 20px;
+      max-width: 650px;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h4 {
+      font-size: 3rem;
+      color: black;
+      font-weight: 500;
+      text-align: center;
+      margin: 1vh 0 2vh 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: black;
+      margin-bottom: 1rem;
+    }
+
+    .result__materials {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+
+      li {
+        font-size: 1.25rem;
+        color: rgb(122, 122, 122);
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .result__total {
+      font-size: 1.75rem;
+      font-weight: bold;
+      color: black;
+      margin-bottom: 2rem;
+    }
+
+    .result__order-button {
+      padding: 0.75rem 1.5rem;
+      margin-bottom: 2vh;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      background-color: #ffcc00;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: rgba(255, 153, 0, 0.671);
+      }
+    }
+  }
+}
 
 /*Медіа запити*/
 @media (max-width: 768px) {
@@ -551,8 +633,8 @@ body {
     }
 
     .section4__equipment img {
-        width: 100%; // Ширина зображень техніки
-        height: auto; // Висота зображень техніки
+        width: 100%;
+        height: auto;
     }
 
     .section4__workers {
@@ -583,7 +665,40 @@ body {
     }
 
     .section4__workers label {
-        font-size: 1.8rem; // Зменшуємо розмір шрифта
+        font-size: 1.8rem;
+    }
+    
+
+    //Секція 5
+    .section5__result {
+      width: 100%;
+      max-width: 768px; 
+
+      .result {
+        h4 {
+          font-size: 2.5rem;
+          margin: 1vh 0 1.5vh 0;
+        }
+
+        p {
+          font-size: 1.25rem;
+        }
+
+        .result__materials {
+
+          li {
+            font-size: 1rem;
+          }
+        }
+
+        .result__total {
+          font-size: 1.5rem;
+        }
+
+        .result__order-button {
+          font-size: 1.25rem;
+        }
+      }
     }
 }
 

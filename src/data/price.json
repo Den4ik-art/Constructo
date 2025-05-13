@@ -1,0 +1,27 @@
+{
+    "equipment": {
+        "Трактор 1": { "pricePerDay": 500 },
+        "Кран 2": { "pricePerDay": 1000 },
+        "Самоскид 3": { "pricePerDay": 400 },
+        "Екскаватор 4": { "pricePerDay": 800 },
+        "Екскаватор 5": { "pricePerDay": 800 },
+        "Трактор 6": { "pricePerDay": 500 }
+    },
+    "workers": {
+        "Маляр": { "pricePerDay": 200 },
+        "Штукатур": { "pricePerDay": 250 },
+        "Бригадир": { "pricePerDay": 300 },
+        "Універсальний будівельник": { "pricePerDay": 150 },
+        "Ландшафтний дизайнер": { "pricePerDay": 350 },
+        "Землекоп": { "pricePerDay": 100 },
+        "Електрик": { "pricePerDay": 250 },
+        "Бетонник": { "pricePerDay": 220 },
+        "Монтажник систем опалення": { "pricePerDay": 280 },
+        "Оператор спецтехніки": { "pricePerDay": 400 },
+        "Сантехнік": { "pricePerDay": 230 },
+        "Каменяр": { "pricePerDay": 180 },
+        "Фасадчик": { "pricePerDay": 210 },
+        "Робітник загального профілю": { "pricePerDay": 120 },
+        "Монтажник вентиляцій": { "pricePerDay": 270 }
+    }
+}

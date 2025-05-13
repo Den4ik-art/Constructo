@@ -1,0 +1,71 @@
+{
+    "Дім з нуля": {
+        "бетон": { "amountPerM2": 0.5, "pricePerUnit": 150 },
+        "цегла": { "amountPerM2": 50, "pricePerUnit": 2 },
+        "цемент": { "amountPerM2": 1, "pricePerUnit": 100 },
+        "арматура": { "amountPerM2": 2, "pricePerUnit": 70 },
+        "пісок": { "amountPerM2": 0.3, "pricePerUnit": 50 },
+        "щебінь": { "amountPerM2": 0.4, "pricePerUnit": 60 },
+        "дерево (балки, лаги)": { "amountPerM2": 0.1, "pricePerUnit": 500 },
+        "гідроізоляція": { "amountPerM2": 1, "pricePerUnit": 20 },
+        "утеплювач (мінвата)": { "amountPerM2": 1.2, "pricePerUnit": 80 },
+        "покрівельний матеріал": { "amountPerM2": 1, "pricePerUnit": 300 },
+        "штукатурка/клей": { "amountPerM2": 0.5, "pricePerUnit": 120 },
+        "вікна": { "amountPerM2": 0.05, "pricePerUnit": 3000 },
+        "двері": { "amountPerM2": 0.02, "pricePerUnit": 4000 },
+        "електропроводка": { "amountPerM2": 3, "pricePerUnit": 15 },
+        "труби та сантехніка": { "amountPerM2": 1, "pricePerUnit": 100 }
+    },
+    "Заливка": {
+        "бетон": { "amountPerM2": 0.8, "pricePerUnit": 120 },
+        "арматура": { "amountPerM2": 0.3, "pricePerUnit": 50 }
+    },
+    "Кладка цегли": {
+        "цегла": { "amountPerM2": 40, "pricePerUnit": 2 },
+        "цемент": { "amountPerM2": 0.5, "pricePerUnit": 100 }
+    },
+    "Утеплення фасаду": {
+        "пінопласт": { "amountPerM2": 0.1, "pricePerUnit": 70 },
+        "клей": { "amountPerM2": 0.05, "pricePerUnit": 40 }
+    },
+    "Утеплення даху": {
+        "пінопласт": { "amountPerM2": 0.1, "pricePerUnit": 80 },
+        "мінеральна вата": { "amountPerM2": 0.1, "pricePerUnit": 90 }
+    },
+    "Плитка": {
+        "плитка": { "amountPerM2": 0.5, "pricePerUnit": 100 },
+        "клей для плитки": { "amountPerM2": 0.05, "pricePerUnit": 50 }
+    },
+    "Озеленення": {
+        "трав'яний газон": { "amountPerM2": 0.5, "pricePerUnit": 50 },
+        "саджанці": { "amountPerM2": 0.1, "pricePerUnit": 150 }
+    },
+    "Шпаклювання": {
+        "шпаклівка": { "amountPerM2": 0.3, "pricePerUnit": 40 }
+    },
+    "Електропроводка": {
+        "кабель": { "amountPerM2": 0.1, "pricePerUnit": 60 },
+        "розетки": { "amountPerM2": 0.05, "pricePerUnit": 120 }
+    },
+    "Фарбування": {
+        "фарба": { "amountPerM2": 0.2, "pricePerUnit": 80 }
+    },
+    "Планування": {
+        "плитка": { "amountPerM2": 0.5, "pricePerUnit": 100 },
+        "клей для плитки": { "amountPerM2": 0.05, "pricePerUnit": 50 }
+    },
+    "Штукатурка": {
+        "штукатурка": { "amountPerM2": 0.5, "pricePerUnit": 60 }
+    },
+    "Розчищення": {
+        "пісок": { "amountPerM2": 0.5, "pricePerUnit": 40 }
+    },
+    "Система опалення": {
+        "трубопровід": { "amountPerM2": 0.2, "pricePerUnit": 150 },
+        "радіатори": { "amountPerM2": 0.05, "pricePerUnit": 500 }
+    },
+    "Вентиляція": {
+        "трубопровід": { "amountPerM2": 0.3, "pricePerUnit": 100 },
+        "вентилятори": { "amountPerM2": 0.1, "pricePerUnit": 200 }
+    }
+}

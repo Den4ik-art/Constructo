@@ -34,21 +34,21 @@ section.section3
           | Заповни контактні дані для подальшого зв'язку
         form(action="#" method="POST")
           input.section3__input(type="text" placeholder="ПІБ" required)
-          input.section3__input(type="tel" placeholder="Телефон" required)
-          input.section3__input(type="email" placeholder="Email" required)
+          input.section3__input(type="tel" placeholder="Телефон (+38 0XX XXX-XX-XX)" required)
+          input.section3__input(type="email" placeholder="Email (@gmail.com)" required)
     .section3__order
       h3.section3__order__title Створи своє замовлення
       .section3__order__works
         h4.section3__order__subtitle Необхідні роботи
         form(action="#" method="POST")
-          each work in ['Дім з нуля', 'Заливка', 'Кладка цегли', 'Утеплення фасаду', 'Утеплення даху', 'Фарбування', 'Озеленення', 'Шпаклювання', 'Електропроводка', 'Фарбування', 'Планування', 'Штукатурка', 'Розчищення', 'Система опалення', 'Вентиляція']
+          each work in ['Дім з нуля', 'Заливка', 'Кладка цегли', 'Утеплення фасаду', 'Утеплення даху', 'Плитка', 'Озеленення', 'Шпаклювання', 'Електропроводка', 'Фарбування', 'Планування', 'Штукатурка', 'Розчищення', 'Система опалення', 'Вентиляція']
             label
               input(type="checkbox" name="work" value=work)
               | #{work}
       .section3__order__fields
-        input(type="text" placeholder="Площа території" required class="wide-input")
-        input(type="date" placeholder="Дата початку" required)
-        input(type="date" placeholder="Дата кінця" required)
+        input(type="text" placeholder="Площа території (150 м²)" required class="wide-input" id="area-input") 
+        input(type="date" placeholder="Дата початку" required id="start-date")
+        input(type="date" placeholder="Дата кінця" required id="end-date")
 //Секція - 4 (Визначення ресурсів та необхідних робітників)
 section.section4
   .section4__container
@@ -57,7 +57,7 @@ section.section4
     .section4__equipment
       each tech in ['Трактор 1', 'Кран 2', 'Самоскид 3', 'Екскаватор 4', 'Екскаватор 5', 'Трактор 6']
         label.section4__checkbox-wrapper
-          input(type='checkbox', name=tech)
+          input(type='checkbox', name='equipment', value=tech)
           img.section4__equipment-image(
             src='/pages/img/equipment' + (tech.split(' ')[1]) + '.png',
             alt=tech
@@ -67,5 +67,15 @@ section.section4
       form(action="#" method="POST")
         each worker in ['Маляр', 'Штукатур', 'Бригадир', 'Універсальний будівельник', 'Ландшафтний дизайнер', 'Землекоп', 'Електрик', 'Бетонник', 'Монтажник систем опалення', 'Оператор спецтехніки', 'Сантехнік', 'Каменяр', 'Фасадчик', 'Робітник загального профілю', 'Монтажник вентиляцій']
           label.section4__checkbox-text
-            input(type='checkbox', name='worker')
+            input(type='checkbox', name='worker', value=worker)
             span= worker
+//Секція - 5 (Результат обрахунків)
+section.section5__result#calc-result
+  .result.hidden
+    .result__rectangle
+      h4 Результат розрахунку
+      p Необхідні матеріали:
+      ul.result__materials
+      p.result__total 0 грн
+      button.result__order-button(type="button") Оформити замовлення
+
